@@ -1,0 +1,88 @@
+:root {
+    --colorBlack-: #000;
+    --colorWhite-: #fff;
+    --colorOrange-: #E44D26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorBlack-);
+    margin: 0;
+    padding: 0;
+    font-family: "arial", helvetica, sans-serif;
+    background: #2980b9 url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2014/10/64467-calculos-documento.jpg') repeat 0 0;
+    background-size: cover;
+}
+
+body h2 {
+    color: var(--colorWhite-);
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 1em;
+    transform: translateY(60px);
+}
+
+/* Class Calculadora */
+
+.container {
+    width: 30%;
+    padding: 40px 15px 15px 15px;
+    margin: auto;
+    border-radius: 5%;
+    background-color: var(--colorOrange-);
+
+}
+
+/* class display */
+.display {
+    margin: 5px 12px;
+    background-color: var(--colorBlack-);
+    border-radius: 20px;
+}
+
+#input-display {
+    width: 60%;
+    background-color: var(--colorBlack-);
+    color: var(--colorWhite-);
+    margin: 20px 130px;
+    text-align: right;
+    font-size: 2rem;
+    border-style: none;
+    outline: none;
+}
+
+/* Los numeros de la calculadora */
+.number {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Item de los buttom */
+input[type="button"] {
+    color: var(--colorWhite-);
+    background-color: var(--colorBlack-);
+    font-size: 3rem;
+    border-radius: 20%;
+    width: 20%;
+    height: 2em;
+    margin: 5px 10px;
+}
+
+input[type="button"]:active {
+    transform: scale(0.8);
+    transition: all 0.1s ease-in-out 0s;
+}
+
+/* Web Response */
+@media (max-width:1200px) {
+    .container {
+        width: 60%;
+    }
+}
